@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using MyEBook.Models;
+using MyEBook.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,6 +16,11 @@ builder.Services.AddDbContext<EBookDbContext>(options =>
 {
     options.UseMySql(connectString, ServerVersion.AutoDetect(connectString));
 });
+
+
+builder.Services.AddAutoMapper(typeof(Program));
+
+builder.Services.AddScoped<IBookRepository, BookRepository>();
 
 var app = builder.Build();
 
