@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using MyEBook.Extensions;
 using MyEBook.Models;
 using MyEBook.Repositories;
 
@@ -11,16 +12,10 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-var connectString = builder.Configuration.GetConnectionString("e-book");
-builder.Services.AddDbContext<EBookDbContext>(options =>
-{
-    options.UseMySql(connectString, ServerVersion.AutoDetect(connectString));
-});
-
+var connectionString = builder.Configuration.GetConnectionString("e-book");
+builder.Services.AddSqlPersistence(connectionString);
 
 builder.Services.AddAutoMapper(typeof(Program));
-
-builder.Services.AddScoped<IBookRepository, BookRepository>();
 
 var app = builder.Build();
 
