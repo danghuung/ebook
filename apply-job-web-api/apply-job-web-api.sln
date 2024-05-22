@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "apply-job-web-api", "apply-job-web-api\apply-job-web-api.csproj", "{111BF2B7-386F-4972-AEF8-BBBA3312A66C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{111BF2B7-386F-4972-AEF8-BBBA3312A66C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{111BF2B7-386F-4972-AEF8-BBBA3312A66C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{111BF2B7-386F-4972-AEF8-BBBA3312A66C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{111BF2B7-386F-4972-AEF8-BBBA3312A66C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BBFF4AA4-D3DD-4053-B715-FAA816BC04ED}
+	EndGlobalSection
+EndGlobal
